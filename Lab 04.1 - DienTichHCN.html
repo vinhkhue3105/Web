@@ -1,0 +1,66 @@
+
+<!-- saved from url=(0038)file:///C:/Users/MAY/Desktop/labb.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+	table{
+        margin: 0 0 30% 30%;
+        font-size: 13;
+        border: 20px;
+		background-color: #E6CDA5;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    </style>
+    
+        <title> Lap 04.1 - DienTichHCN </title>
+    </head>
+    <body>
+    <div id="Tinh"> 
+        <div class="container">
+        <form id="TinhDienTich"> 
+		
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2"> <h1 style="background-color: F0B535; color: brown; font-family:Verdana;"> Diện tích hình chữ nhật</h1></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Chiều dài</td>
+                            <td>   <input type="number" id="chieudai" placeholder="Nhập chiều dài"></td>
+                        </tr>
+                        <tr>
+                            <td> Chiều rộng</td>
+                            <td> <input type="number" id="chieurong" placeholder="Nhập chiều rộng" <="" td="">
+                        </td></tr>
+                        <tr>
+                            <td> Diện Tích</td>
+                            <td> <input type="number" id="dientich" placeholder="Diện tích" disabled="disabled" style="background-color: pink;" <="" td="">
+                        </td></tr>
+                        <tr>
+                            <td style="text-align:center;" colspan="2">
+                            <input type="button" onclick="TinhDienTich()" value="Tính">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+           </form>
+        </div>
+    <span id="copyright">
+    <br>
+    © Liên hệ: Nhóm 4 - HP: Thiết kế WEB
+    </span>
+    </div>
+    <script type="text/javascript">
+        function TinhDienTich ()
+        {
+            var dai = document.getElementById ('chieudai');
+            var rong = document.getElementById ('chieurong');
+            var dientich = dai.value * rong.value;
+            //return dientich;
+            document.getElementById("dientich").value = dientich;
+        }
+    </script>
+
+    
+    
+</body></html>
